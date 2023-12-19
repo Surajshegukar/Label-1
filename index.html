@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label</title>
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.8.0/dist/JsBarcode.all.min.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" type="text/css" media="print" href="print.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container" id="container-1">
+        <h3> CREATE YOUR LABEL</h3>  
+        <table cellspacing="2" cellpadding="8" >  
+        <tr><td><b>MRP RS.</b></td>   
+        <td><input type="text" placeholder="Enter your MRP price" id="n1"></td></tr>  
+        <tr><td><b>Loc No.</b></td>  
+        <td><input type="text" placeholder="Enter your Loc Number" id="e1"></td></tr>  
+        <tr><td><b>Mfg. Date</b></td>  
+        <td><input type="text" placeholder="Enter Mfg. Date" id="p1"></td></tr>  
+        <tr><td><b>Barcode Number</b></td>  
+        <td><input type="text" placeholder="Enter your Barcode Number" id="p2"></td></tr>  
+        <tr><td>   
+        <div class="print">
+            <input type="button" value="Print" onclick="printDiv()"> 
+        </div>
+        </table>
+          
+  
+    </div>
+    <div class="container" id="container-2">
+        <h1>Reliason</h1>
+        <h2>Twason</h2>
+        <p id="p-mrp"></p>
+        <p id="loc"></p>
+        <p id="mfg"></p>
+        <div class="barcode">
+            <img id="barcode"/>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>
